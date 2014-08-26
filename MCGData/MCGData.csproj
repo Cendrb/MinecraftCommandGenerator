@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E9657E30-6404-4483-AEE5-248F50BA442A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MCGData</RootNamespace>
+    <AssemblyName>MCGData</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActiveEffect.cs" />
+    <Compile Include="Enchantment.cs" />
+    <Compile Include="EnchantmentConverter.cs" />
+    <Compile Include="Entity.cs" />
+    <Compile Include="FloatConverter.cs" />
+    <Compile Include="Item.cs" />
+    <Compile Include="Mob.cs" />
+    <Compile Include="Mobs\Bat.cs" />
+    <Compile Include="Mobs\Blaze.cs" />
+    <Compile Include="Mobs\CaveSpider.cs" />
+    <Compile Include="Mobs\Chicken.cs" />
+    <Compile Include="Mobs\Cow.cs" />
+    <Compile Include="Mobs\Creeper.cs" />
+    <Compile Include="Mobs\EnderDragon.cs" />
+    <Compile Include="Mobs\Enderman.cs" />
+    <Compile Include="Mobs\Endermite.cs" />
+    <Compile Include="Mobs\Ghast.cs" />
+    <Compile Include="Mobs\Giant.cs" />
+    <Compile Include="Mobs\Guardian.cs" />
+    <Compile Include="Mobs\Horse.cs" />
+    <Compile Include="Mobs\IronGolem.cs" />
+    <Compile Include="Mobs\MagmaCube.cs" />
+    <Compile Include="Mobs\Mooshroom.cs" />
+    <Compile Include="Mobs\Ocelot.cs" />
+    <Compile Include="Mobs\Pig.cs" />
+    <Compile Include="Mobs\Rabbit.cs" />
+    <Compile Include="Mobs\Sheep.cs" />
+    <Compile Include="Mobs\Silverfish.cs" />
+    <Compile Include="Mobs\Skeleton.cs" />
+    <Compile Include="Mobs\Slime.cs" />
+    <Compile Include="Mobs\SnowGolem.cs" />
+    <Compile Include="Mobs\Spider.cs" />
+    <Compile Include="Mobs\Squid.cs" />
+    <Compile Include="Mobs\Villager.cs" />
+    <Compile Include="Mobs\Witch.cs" />
+    <Compile Include="Mobs\Wither.cs" />
+    <Compile Include="Mobs\Wolf.cs" />
+    <Compile Include="Mobs\Zombie.cs" />
+    <Compile Include="Mobs\ZombiePigman.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

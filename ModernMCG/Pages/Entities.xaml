@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="ModernMCG.Pages.Entities"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             mc:Ignorable="d" >
+    <Grid Style="{StaticResource ContentRoot}" Margin="16,10,16,16">
+        <!-- TODO: set @SelectedSource -->
+        <mui:ModernTab x:Name="tab" Layout="List" Margin="10,10,-10,24">
+            <mui:ModernTab.Links>
+            </mui:ModernTab.Links>
+        </mui:ModernTab>
+    </Grid>
+</UserControl>
